@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<title> Ejercicio 4 </title>
+</head>
+<body>
+	<h1>Globant - Bootcamp WEB UI</h1>
+	<div id="contenedorForma">
+		<h2>Ejercicio 4</h2>
+	<form method="post" action="#" enctype="multipart/form-data" onsubmit="return validarFormulario()">
+		<p class="titulo">
+			<input type="text" class="input" placeholder="Título" id="titulo" name="titulo" >
+		</p>
+		<p class="descripcion">
+			<textarea class="input" id="descripcion" placeholder="Descripción" name="descripcion">
+			</textarea>
+		</p>
+		<p>
+			<input type="file" name="archivo" id="archivo">
+		</p>
+		<p>
+			<input type="checkbox" name="terminos" id="terminos"> Términos y Condiciones
+		</p>
+		<p>
+			<input type="submit" name="submit" value="Enviar">
+		</p>
+	</form>
+	</div>
+	<script src="./js/javascript.js"></script>
+	
+</body>
+</html>

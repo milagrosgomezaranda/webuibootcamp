@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
+            <title>Ejercicio 5</title> 
+        </head>
+        <body>
+            <h1>Globant - Bootcamp WEB UI</h1>
+            <h2>Ejercicio 5</h2>
+            <textarea id="display" style="width:500px;height:500px"></textarea>
+            <script>
+                var parsed = "";
+                var myObject = [{
+                    Nombre: "Solana",
+                    Apellido: "Monteros",
+                    email: "solana_monteros@gmail.com"
+                }, {
+                    Nombre: "Jose",
+                    Apellido: "Perez",
+                    email: "JosePe@gmail.com"
+                }, {
+                    Nombre: "Rosa",
+                    Apellido: "Ramirez",
+                    email: "RosaRa@gmail.com"
+                }];
+                for (i = 0; i< myObject.length; i++) {
+                    var myobj=  myObject[i];
+                    for (var property in myobj) {
+                        parsed += property + ": " + myobj[property] + "\n\n";          
+                    }
+                }                           
+                $("#display").val(parsed);            
+            </script>
+        </body>
+    </html>
